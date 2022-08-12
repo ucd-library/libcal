@@ -1,0 +1,114 @@
+nav[aria-label='Breadcrumb'] {
+  min-height: 3rem;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem !important;
+  position: absolute;
+  left: 1rem;
+  color: #4c4c4c;
+  font-size: 0.84rem !important;
+  font-weight: bold !important;
+  background: none;
+  a {
+    color: #13639e;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  li {
+    &:after {
+      margin: 0 0.6rem 0 0.5rem;
+      color: #b0d0ed;
+      content: '\2022';
+    }
+    &.active {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  > li + li:before {
+    display: none;
+  }
+}
+
+.s-lc-eq-avail,
+.label-eq-avail,
+.s-lc-eq-period-available {
+  background: #b0d0ed !important;
+  border-color: #b0d0ed !important;
+}
+.s-lc-eq-avail:hover,
+.s-lc-eq-period-available:hover {
+  background: #73abdd !important;
+  border-color: #73abdd !important;
+}
+.s-lc-eq-pending,
+.label-eq-pending,
+.s-lc-eq-period-pending {
+  background: #ffbf00 !important;
+  border-color: #ffbf00 !important;
+}
+
+.s-lc-eq-checkout,
+.s-lc-eq-r-unavailable,
+.s-lc-eq-r-padding,
+.label-eq-unavailable,
+.s-lc-eq-period-booked {
+  background: #14447a !important;
+  border-color: #14447a !important;
+}
+
+.form-group-sm {
+  .form-control {
+    height: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 0;
+  }
+  select.form-control {
+    height: inherit;
+    line-height: inherit;
+    color: #13639e;
+  }
+}
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #999;
+  border-radius: 0;
+  background-color: #fff;
+  background-image: none;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset;
+  color: #13639e;
+  font-family: inherit;
+  outline: 0;
+}
+.fc-scrollgrid-sync-table {
+  margin-bottom: 0;
+}
+.fc {
+  .fc-timeline-now-indicator-line {
+    top: -50px;
+  }
+}
+.fc-toolbar-title {
+  color: rgb(2, 40, 81);
+}
+.idon-legend {
+  list-style-type: none;
+  display: block;
+  margin: 1rem 0;
+  li {
+    display: inline-block;
+    padding: 0 0.5rem;
+  }
+}
+.s-lc-public-footer {
+  background: none;
+  font-size: 0.75rem;
+}
