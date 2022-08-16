@@ -18,7 +18,7 @@
     },
     "homepage": "https://github.com/ucd-library/libcal#readme",
     "devDependencies": {
-        "@ucd-lib/cork-app-build": "^0.2.0",
+        "@ucd-lib/cork-app-build": "^0.4.1",
         "breakpoint-sass": "^2.7.1",
         "cork-app-utils": "^1.0.5",
         "css-loader": "^5.2.4",
@@ -33,7 +33,7 @@
         "webpack-cli": "^4.8.0"
     },
     "dependencies": {
-        "@ucd-lib/theme-elements": "^1.1.0",
+        "@ucd-lib/theme-elements": "^1.1.1",
         "normalize-scss": "^7.0.1"
     }
 }

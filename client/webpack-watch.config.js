@@ -42,7 +42,7 @@ let loaderOptions = {
 if (!Array.isArray(config)) config = [config];
 config.forEach((conf) => {
   // make stylesheet
-  conf.entry = [conf.entry, path.join(__dirname, './src/scss/style.scss')];
+  conf.entry = './src/scss/style.scss';
   conf.module.rules.push({
     test: /\.s[ac]ss$/i,
     use: [
